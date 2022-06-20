@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="accordion">
+       <div class="contentBx">
+           <div class="lable">list One</div>
+               <div class="contact">
+                   <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem quas minus hic iure sit aliquid consequuntur nemo,
+                    necessitatibus ducimus quae? Voluptatem necessitatibus expedita 
+                    laudantium non neque praesentium eum incidunt dolore dolores,
+                    suscipit odio soluta commodi. Cum voluptates magnam quo reiciendis
+                    minima hic, qui deleniti, rem dolor asperiores itaque consequatur
+                    fuga.
+                   </p>                
+           </div>
+        </div>
+        <div class="contentBx">
+           <div class="lable">list Twoo</div>
+               <div class="contact">
+                   <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem quas minus hic iure sit aliquid consequuntur nemo,
+                    necessitatibus ducimus quae? Voluptatem necessitatibus expedita 
+                    laudantium non neque praesentium eum incidunt dolore dolores,
+                    suscipit odio soluta commodi. Cum voluptates magnam quo reiciendis
+                    minima hic, qui deleniti, rem dolor asperiores itaque consequatur
+                    fuga.
+                   </p>
+
+                </div>
+           </div>
+        <div class="contentBx">
+           <div class="lable">list three </div>
+                <div class="contact">
+                     <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem quas minus hic iure sit aliquid consequuntur nemo,
+                    necessitatibus ducimus quae? Voluptatem necessitatibus expedita 
+                    laudantium non neque praesentium eum incidunt dolore dolores,
+                    suscipit odio soluta commodi. Cum voluptates magnam quo reiciendis
+                    minima hic, qui deleniti, rem dolor asperiores itaque consequatur
+                        fuga.
+                    </p>
+            </div>
+        </div>        
+        <div class="contentBx">
+           <div class="lable">list Four </div>
+               <div class="contact">
+                   <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem quas minus hic iure sit aliquid consequuntur nemo,
+                    necessitatibus ducimus quae? Voluptatem necessitatibus expedita 
+                    laudantium non neque praesentium eum incidunt dolore dolores,
+                    suscipit odio soluta commodi. Cum voluptates magnam quo reiciendis
+                    minima hic, qui deleniti, rem dolor asperiores itaque consequatur
+                    fuga.
+                   </p>
+
+                </div>
+           </div>
+        </div>    
+    <script>
+        let accordion = document.getElementsByClassName('contentBx');
+
+        for (let i=0; i<accordion.length; i++ ){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8BDBEC;
+}
+.accordion{
+max-width: 800px;
+
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    
+}
+.accordion .contentBx .lable {
+    position: relative;
+    padding: 10px;
+    background:#0fafd3;
+    color: #F7F9F9;
+    cursor: pointer;
+    }
+.accordion .contentBx .lable::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) ;
+    font-size: 23px;
+}
+.accordion .contentBx.active .lable::before{
+content: '-';;
+}
+.accordion .contentBx .contact{
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+
+}
+.accordion .contentBx.active .contact
+{
+    height: 150px;
+    padding: 10px;
+}
